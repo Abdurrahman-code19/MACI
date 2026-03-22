@@ -6,11 +6,11 @@ interface UseScrollAnimationOptions {
   rootMargin?: string
 }
 
-export function useScrollAnimation<T extends HTMLElement>(
+export function useScrollAnimation<T extends HTMLElement = HTMLElement>(
   options: UseScrollAnimationOptions = {}
-): [RefObject<T | null>, boolean] {
+): [RefObject<T>, boolean] {
   const { threshold = 0.1, rootMargin = '0px' } = options
-  const ref = useRef<T | null>(null)
+  const ref = useRef<T>(null)
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {

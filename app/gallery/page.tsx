@@ -8,8 +8,8 @@ import { Camera } from 'lucide-react'
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState('All')
   const [loadedCount, setLoadedCount] = useState(9)
-  // FIXED: Changed HTMLDivElement to HTMLDivElement | null
-  const [ref, isVisible] = useScrollAnimation<HTMLDivElement | null>({ threshold: 0.1 })
+  // FIXED: Remove the generic type and let TypeScript infer it
+const [ref, isVisible] = useScrollAnimation<HTMLDivElement>({ threshold: 0.1 })
 
   const filteredImages = useMemo(() => {
     if (activeCategory === 'All') return galleryImages
