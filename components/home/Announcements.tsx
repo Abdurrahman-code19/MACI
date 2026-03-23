@@ -10,12 +10,6 @@ const announcements = [
     type: 'urgent',
   },
   {
-    title: '2026 WAEC Results Out!',
-    date: 'Released',
-    description: '98% of our students scored above Credit in 5 subjects including Mathematics & English.',
-    type: 'success',
-  },
-  {
     title: 'Ramadan Lecture Series',
     date: 'Every Friday',
     description: 'Join us every Friday for special Islamic lectures and Iftar during the blessed month.',
