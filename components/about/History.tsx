@@ -27,7 +27,7 @@ export default function History() {
               A Legacy of <span className="text-primary">Excellence</span>
             </h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Founded in May 1994 by Alhaji Mahmud Adebayo, a visionary educator and Islamic scholar, Mahmud College Ijede began with just 25 students and 5 teachers in a modest facility.
+              Founded in May 1994 by Alhaji Mahmud Adebayo, a visionary educator and Islamic scholar, Mahmud Ahmadiyya College began with just 25 students and 5 teachers in a modest facility.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
               Over the past 30+ years, we have grown into one of Ikorodu&apos;s most respected Islamic schools, with over 500 students and 50+ dedicated staff members.
@@ -48,7 +48,7 @@ export default function History() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/MACI/Front-View-1.jpg"
-                alt="Mahmud College Ijede"
+                alt="Mahmud Ahmadiyya College"
                 fill
                 className="object-cover"
               />

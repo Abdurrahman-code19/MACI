@@ -31,14 +31,14 @@ export default function Footer() {
               <div className="w-14 h-14 relative">
                 <Image
                   src="/MACI/cropped-LOGO-1.jpg"
-                  alt="Mahmud College Ijede Logo"
+                  alt="Mahmud Ahmadiyya College Logo"
                   fill
                   className="object-contain"
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-white font-bold text-xl leading-tight">MAHMUD</span>
-                <span className="text-secondary text-sm font-medium">COLLEGE IJEDE</span>
+                <span className="text-white font-bold text-xl leading-tight">MAHMUD AHMADIYYA</span>
+                <span className="text-secondary text-sm font-medium">COLLEGE</span>
               </div>
             </Link>
             <p className="text-gray-400 text-sm mb-4 leading-relaxed">
@@ -117,7 +117,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Mahmud College Ijede. All rights reserved.
+              © {new Date().getFullYear()} Mahmud Ahmadiyya College. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-secondary transition-colors">Privacy Policy</a>

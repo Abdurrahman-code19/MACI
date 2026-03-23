@@ -28,7 +28,7 @@ export default function Newsletter() {
         <Mail className="w-16 h-16 text-secondary mx-auto mb-6" />
         
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-          Stay Updated with Mahmud College
+          Stay Updated with Mahmud Ahmadiyya College
         </h2>
         <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
           Subscribe to our newsletter for latest news, events, and announcements

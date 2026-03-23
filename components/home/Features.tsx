@@ -44,7 +44,7 @@ export default function Features() {
             What Makes Us <span className="text-primary">Special</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Discover what makes Mahmud College Ijede the ideal choice for your child&apos;s education
+            Discover what makes Mahmud Ahmadiyya College the ideal choice for your child&apos;s education
           </p>
         </div>
 

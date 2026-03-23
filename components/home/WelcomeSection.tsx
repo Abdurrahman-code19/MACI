@@ -40,10 +40,10 @@ export default function WelcomeSection() {
               📖 Welcome to Our School
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-textDark mb-6">
-              Welcome to <span className="text-primary">Mahmud College Ijede</span>
+              Welcome to <span className="text-primary">Mahmud Ahmadiyya College</span>
             </h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Since our establishment in May 1994, Mahmud College Ijede has been committed to providing holistic education that blends Islamic teachings with modern academics.
+              Since our establishment in May 1994, Mahmud Ahmadiyya College has been committed to providing holistic education that blends Islamic teachings with modern academics.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
               Our mission is to raise God-fearing, intellectually sound, and morally upright leaders who will serve their communities and the nation at large.

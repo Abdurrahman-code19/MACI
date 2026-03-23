@@ -8,7 +8,7 @@ export default function MapSection() {
         <div className="text-center mb-10">
           <h2 className="section-title">Find Us</h2>
           <p className="section-subtitle">
-            Visit our campus and experience the Mahmud College Ijede difference
+            Visit our campus and experience the Mahmud Ahmadiyya College difference
           </p>
         </div>
 
@@ -21,7 +21,7 @@ export default function MapSection() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Mahmud College Ijede Location"
+            title="Mahmud Ahmadiyya College Location"
             className="absolute inset-0"
           />
         </div>

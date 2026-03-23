@@ -7,7 +7,7 @@ const testimonials = [
   {
     name: 'Alhaji Adebayo',
     role: 'Parent of JSS 2 Student',
-    text: 'Mahmud College has transformed my son academically and spiritually. The blend of Islamic values and modern education is exceptional.',
+    text: 'Mahmud Ahmadiyya College has transformed my son academically and spiritually. The blend of Islamic values and modern education is exceptional.',
     rating: 5,
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
   {
     name: 'Hajiya Fatima',
     role: 'Parent of Primary 5 Student',
-    text: 'The Islamic environment and moral upbringing at Mahmud College gives me peace of mind. My children are in safe hands.',
+    text: 'The Islamic environment and moral upbringing at Mahmud Ahmadiyya College gives me peace of mind. My children are in safe hands.',
     rating: 5,
   },
 ]

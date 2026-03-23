@@ -4,9 +4,9 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
-  title: 'Mahmud College Ijede - Excellence in Education, Character in Action',
-  description: 'Mahmud College Ijede is a prestigious Islamic school in Ijede, Ikorodu, Lagos State, Nigeria, dedicated to providing quality education with Islamic values.',
-  keywords: ['Mahmud College', 'Ijede', 'Islamic School', 'Education', 'Lagos', 'Nigeria'],
+  title: 'Mahmud Ahmadiyya College - Excellence in Education, Character in Action',
+  description: 'Mahmud Ahmadiyya College is a prestigious Islamic school in Ijede, Ikorodu, Lagos State, Nigeria, dedicated to providing quality education with Islamic values.',
+  keywords: ['Mahmud Ahmadiyya College', 'Ijede', 'Islamic School', 'Education', 'Lagos', 'Nigeria'],
   icons: {
     icon: '/favicon.jpg',
   },

@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/MACI/img22.jpeg"
-          alt="Mahmud College Ijede"
+          alt="Mahmud Ahmadiyya College"
           fill
           className="object-cover"
           priority

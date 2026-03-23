@@ -18,7 +18,7 @@ export default function SchoolAnthem() {
         <div ref={ref} className={`text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
             <Music className="w-5 h-5 text-secondary" />
-            <span className="text-white font-medium">Mahmud College Ijede Anthem</span>
+            <span className="text-white font-medium">Mahmud Ahmadiyya College Anthem</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-10">
@@ -30,10 +30,10 @@ export default function SchoolAnthem() {
               <div>
                 <h3 className="text-secondary font-bold text-xl mb-3">Verse 1:</h3>
                 <p className="text-white/90 text-lg leading-relaxed">
-                  Mahmud College, our beloved school,<br />
+                  Mahmud Ahmadiyya College, our beloved school,<br />
                   Where knowledge meets faith, we live by the rule,<br />
                   Guiding us with wisdom, teaching us what&apos;s true,<br />
-                  Mahmud College, we are proud of you!
+                  Mahmud Ahmadiyya College, we are proud of you!
                 </p>
               </div>
 
@@ -42,7 +42,7 @@ export default function SchoolAnthem() {
                 <p className="text-white/90 text-lg leading-relaxed">
                   Excellence in education, character in action,<br />
                   Building future leaders, with faith as our foundation.<br />
-                  Mahmud College Ijede, forever we will stand,<br />
+                  Mahmud Ahmadiyya College, forever we will stand,<br />
                   United in purpose, guided by His hand.
                 </p>
               </div>
@@ -55,7 +55,7 @@ export default function SchoolAnthem() {
                       With Islamic values, strong and bright,<br />
                       We strive for excellence, morning to night,<br />
                       Integrity and respect, in all we do,<br />
-                      Mahmud College, we honor you!
+                      Mahmud Ahmadiyya College, we honor you!
                     </p>
                   </div>
                 </>

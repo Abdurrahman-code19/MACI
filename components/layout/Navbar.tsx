@@ -49,14 +49,14 @@ export default function Navbar() {
               <div className="w-12 h-12 relative">
                 <Image
                   src="/MACI/cropped-LOGO-1.jpg"
-                  alt="Mahmud College Ijede Logo"
+                  alt="Mahmud Ahmadiyya College Logo"
                   fill
                   className="object-contain"
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-white font-bold text-lg leading-tight">MAHMUD</span>
-                <span className="text-secondary text-xs font-medium">COLLEGE IJEDE • Est. May 1994</span>
+                <span className="text-white font-bold text-lg leading-tight">MAHMUD AHMADIYYA</span>
+                <span className="text-secondary text-xs font-medium">COLLEGE • Est. May 1994</span>
               </div>
             </Link>
 
@@ -113,14 +113,14 @@ export default function Navbar() {
             <div className="w-12 h-12 relative">
               <Image
                 src="/MACI/cropped-LOGO-1.jpg"
-                alt="Mahmud College Ijede Logo"
+                alt="Mahmud Ahmadiyya College Logo"
                 fill
                 className="object-contain"
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-white font-bold text-lg leading-tight">MAHMUD</span>
-              <span className="text-secondary text-xs font-medium">COLLEGE IJEDE</span>
+              <span className="text-white font-bold text-lg leading-tight">MAHMUD AHMADIYYA</span>
+              <span className="text-secondary text-xs font-medium">COLLEGE</span>
             </div>
           </div>
 

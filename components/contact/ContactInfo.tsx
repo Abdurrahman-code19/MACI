@@ -18,7 +18,7 @@ export default function ContactInfo() {
           </div>
           <div>
             <h4 className="font-semibold text-textDark">Address</h4>
-            <p className="text-gray-600">Mahmud College Ijede, Ijede, Ikorodu, Lagos State, Nigeria</p>
+            <p className="text-gray-600">Mahmud Ahmadiyya College, Ijede, Ikorodu, Lagos State, Nigeria</p>
           </div>
         </div>
 

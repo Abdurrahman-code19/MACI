@@ -17,7 +17,7 @@ export default function AboutPage() {
             🕌 About Us
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
-            About Mahmud College Ijede
+            About Mahmud Ahmadiyya College
           </h1>
           <p className="text-xl text-secondary max-w-2xl mx-auto">
             Building Leaders Through Knowledge, Faith & Character

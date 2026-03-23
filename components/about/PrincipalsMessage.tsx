@@ -31,18 +31,18 @@ export default function PrincipalsMessage() {
               &ldquo;Assalamu Alaikum Warahmatullahi Wabarakatuh.&rdquo;
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Welcome to Mahmud College Ijede, where we nurture the next generation of Muslim leaders. Our commitment is to provide an environment where every child can thrive academically, spiritually, and socially.
+              Welcome to Mahmud Ahmadiyya College, where we nurture the next generation of Muslim leaders. Our commitment is to provide an environment where every child can thrive academically, spiritually, and socially.
             </p>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              At Mahmud College, we believe education goes beyond textbooks. We focus on character development, Islamic values, and academic excellence. Together with our dedicated staff, supportive parents, and motivated students, we continue to build a legacy of excellence.
+              At Mahmud Ahmadiyya College, we believe education goes beyond textbooks. We focus on character development, Islamic values, and academic excellence. Together with our dedicated staff, supportive parents, and motivated students, we continue to build a legacy of excellence.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
               Our vision is to produce morally upright, intellectually sound, and globally competitive leaders who will positively impact their communities and the world at large.
             </p>
             <div className="bg-primary/5 p-6 rounded-xl">
-              <p className="text-gray-600 italic">Jazakumullahu Khayran for your interest in Mahmud College Ijede.</p>
+              <p className="text-gray-600 italic">Jazakumullahu Khayran for your interest in Mahmud Ahmadiyya College.</p>
               <p className="font-bold text-textDark mt-4">— Alhaji AbdulRahman Balogun</p>
-              <p className="text-primary text-sm">Principal, Mahmud College Ijede</p>
+              <p className="text-primary text-sm">Principal, Mahmud Ahmadiyya College</p>
             </div>
           </div>
         </div>
