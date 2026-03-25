@@ -1,28 +1,43 @@
 'use client'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import { Calendar } from 'lucide-react'
+import { Calendar, Banknote, Clock, BookOpen, Monitor, FlaskConical, School, Sprout } from 'lucide-react'
 
 const announcements = [
   {
-    title: 'ADMISSION 2026/2027 NOW OPEN!',
-    date: 'Ongoing',
-    description: 'Applications are ongoing for all classes. Limited slots available. Apply before May 30th, 2026.',
+    title: 'ADMISSION INTO JSS1-2 & SS1-2 IS IN PROGRESS FOR 2026/2027 ACADEMIC SESSION',
+    date: 'ENROL NOW!',
+    description: 'Limited slots available for JSS1-2 and SS1-2. Secure your child\'s future with quality Islamic education.',
     type: 'urgent',
   },
   {
-    title: 'Ramadan Lecture Series',
-    date: 'Every Friday',
-    description: 'Join us every Friday for special Islamic lectures and Iftar during the blessed month.',
+    title: 'EXAMINATION DATES',
+    date: 'Saturdays at 9:00AM',
+    description: '📅 May 16th, 2026 | June 13th, 2026 | July 18th, 2026 | August 15th, 2026',
     type: 'info',
+  },
+  {
+    title: 'MODE OF PAYMENT',
+    date: 'Application Form - N5,000 only',
+    description: 'Account Name: Mahmud Ahmadiyya College | Account No: 0015412051 | Bank: GTBANK PLC',
+    type: 'payment',
   },
 ]
 
+const schoolFeatures = [
+  { icon: BookOpen, text: 'Quality education that makes a child stand the test of time' },
+  { icon: Monitor, text: 'Globalized knowledge on information technology via computer & internet facilities' },
+  { icon: School, text: 'Qualified & experienced teachers' },
+  { icon: FlaskConical, text: 'Well-equipped science laboratories' },
+  { icon: Sprout, text: 'Practical agriculture in livestock & crops that feed the hostels' },
+  { icon: School, text: 'Neat & conducive learning environment' },
+]
+
 const events = [
-  { date: 'April 5, 2026', title: 'PTA Meeting', time: '10:00 AM' },
-  { date: 'April 10-15, 2026', title: 'Mid-Term Break', time: '' },
-  { date: 'April 25, 2026', title: 'Inter-House Sports Day', time: '' },
-  { date: 'May 15, 2026', title: 'Islamic Quiz Competition', time: '' },
-  { date: 'June 3, 2026', title: 'Graduation Ceremony', time: '' },
+  { date: 'May 16, 2026', title: 'Admission Examination', time: '9:00 AM' },
+  { date: 'June 13, 2026', title: 'Admission Examination', time: '9:00 AM' },
+  { date: 'July 18, 2026', title: 'Admission Examination', time: '9:00 AM' },
+  { date: 'August 15, 2026', title: 'Admission Examination', time: '9:00 AM' },
+  { date: 'Ongoing', title: 'Admission for JSS1-2 & SS1-2', time: '2026/2027 Session' },
 ]
 
 export default function Announcements() {
@@ -32,7 +47,7 @@ export default function Announcements() {
     switch (type) {
       case 'urgent':
         return 'border-l-red-500 bg-red-50'
-      case 'success':
+      case 'payment':
         return 'border-l-green-500 bg-green-50'
       default:
         return 'border-l-primary bg-primary/5'
@@ -64,12 +79,28 @@ export default function Announcements() {
                 </div>
               ))}
             </div>
+
+            {/* School Features Section */}
+            <div className="mt-8 bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <School className="w-6 h-6 text-primary" />
+                <h3 className="text-xl font-bold text-textDark">Our Standard</h3>
+              </div>
+              <div className="space-y-3">
+                {schoolFeatures.map((feature, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
+                    <feature.icon className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                    <p className="text-gray-600 text-sm">{feature.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div>
             <div className="flex items-center gap-2 mb-6">
               <span className="text-2xl">📅</span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-textDark">Upcoming Events</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-textDark">Upcoming Events & Exams</h2>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-6 space-y-4">
@@ -82,7 +113,7 @@ export default function Announcements() {
                   style={{ transitionDelay: `${index * 100 + 200}ms` }}
                 >
                   <div className="w-12 h-12 bg-primary rounded-lg flex flex-col items-center justify-center text-white flex-shrink-0">
-                    <Calendar className="w-6 h-6" />
+                    {event.title.includes('Examination') ? <Clock className="w-6 h-6" /> : <Calendar className="w-6 h-6" />}
                   </div>
                   <div className="flex-1">
                     <p className="text-sm text-primary font-medium">{event.date}</p>
@@ -91,6 +122,17 @@ export default function Announcements() {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Contact Information */}
+            <div className="mt-8 bg-primary/5 rounded-xl p-6">
+              <h3 className="text-lg font-bold text-textDark mb-3">Contact Us</h3>
+              <div className="space-y-2 text-sm text-gray-600">
+                <p>📍 Abule Eko, Ijede, Ikorodu, Lagos State</p>
+                <p>📞 0802 7490 454, 0802 9015 034, 0802 3838 360, 0803 4246 459</p>
+                <p>✉️ mahmudcollegeijede@yahoo.com | mahmudcollegeijede@gmail.com</p>
+                <p>🌐 https://mahmudcollegeijede.vercel.app/</p>
+              </div>
             </div>
           </div>
         </div>
