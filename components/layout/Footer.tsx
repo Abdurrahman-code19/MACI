@@ -70,15 +70,18 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 justify-center lg:justify-start">
                 <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400 text-sm">Ijede, Ikorodu, Lagos State, Nigeria</span>
+                <span className="text-gray-400 text-sm">Abule Eko, Ijede, Ikorodu, Lagos State, Nigeria</span>
               </li>
               <li className="flex items-center gap-3 justify-center lg:justify-start">
                 <Phone className="w-5 h-5 text-secondary flex-shrink-0" />
-                <span className="text-gray-400 text-sm">+234 812 345 6789</span>
+                <span className="text-gray-400 text-sm">0802 7490 454, 0802 9015 034, 0802 3838 360, 0803 4246 459</span>
               </li>
               <li className="flex items-center gap-3 justify-center lg:justify-start">
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
-                <span className="text-gray-400 text-sm">info@mahmudcollege.sch.ng</span>
+                <div className="text-gray-400 text-sm">
+                  <p>mahmudcollegeijede@yahoo.com</p>
+                  <p>mahmudcollegeijede@gmail.com</p>
+                </div>
               </li>
               <li className="flex items-center gap-3 justify-center lg:justify-start">
                 <Clock className="w-5 h-5 text-secondary flex-shrink-0" />
