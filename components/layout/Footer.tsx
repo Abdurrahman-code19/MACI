@@ -120,7 +120,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Mahmud Ahmadiyya College. All rights reserved.
+              © {new Date().getFullYear()} RIIT Global Tech. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-secondary transition-colors">Privacy Policy</a>
