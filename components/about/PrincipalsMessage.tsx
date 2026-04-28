@@ -14,9 +14,8 @@ export default function PrincipalsMessage() {
               <User className="w-32 h-32 text-primary/30" />
             </div>
             <div className="mt-6 lg:mt-0 lg:absolute lg:bottom-0 lg:left-0 bg-white p-6 rounded-xl shadow-xl">
-              <h4 className="font-bold text-textDark text-lg">Alhaji AbdulRahman Balogun</h4>
-              <p className="text-primary text-sm">B.Sc, M.Ed, PGDE</p>
-              <p className="text-gray-500 text-sm mt-2">Principal</p>
+              <h4 className="font-bold text-textDark text-lg">Mrs Taofeekat A. Fagbolade</h4>
+              <p className="text-primary text-sm">Principal, Mahmud Ahmadiyya College</p>
             </div>
           </div>
 
@@ -41,7 +40,7 @@ export default function PrincipalsMessage() {
             </p>
             <div className="bg-primary/5 p-6 rounded-xl">
               <p className="text-gray-600 italic">Jazakumullahu Khayran for your interest in Mahmud Ahmadiyya College.</p>
-              <p className="font-bold text-textDark mt-4">— Alhaji AbdulRahman Balogun</p>
+              <p className="font-bold text-textDark mt-4">— Mrs Taofeekat A. Fagbolade</p>
               <p className="text-primary text-sm">Principal, Mahmud Ahmadiyya College</p>
             </div>
           </div>
