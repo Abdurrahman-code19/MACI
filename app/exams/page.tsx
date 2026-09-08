@@ -1,7 +1,15 @@
+import type { Metadata } from 'next'
 import MainButtons from '@/components/exams/MainButtons'
 import AdditionalFeatures from '@/components/exams/AdditionalFeatures'
 import FAQ from '@/components/exams/FAQ'
 import { ClipboardList } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Exams & Records',
+  description:
+    'Check your WAEC/NECO results and access the staff portal at Mahmud Ahmadiyya College Ijede, Ikorodu, Lagos.',
+  alternates: { canonical: '/exams' },
+}
 
 export default function ExamsPage() {
   return (

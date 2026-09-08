@@ -1,8 +1,16 @@
+import type { Metadata } from 'next'
 import ContactInfo from '@/components/contact/ContactInfo'
 import ContactForm from '@/components/contact/ContactForm'
 import MapSection from '@/components/contact/MapSection'
 import QuickContactCards from '@/components/contact/QuickContactCards'
 import { Mail } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Contact Us',
+  description:
+    'Contact Mahmud Ahmadiyya College Ijede, Ikorodu, Lagos. Call +234 802 7490 454, email us, or visit Abule Eko, Ijede, Ikorodu, Lagos State, Nigeria.',
+  alternates: { canonical: '/contact' },
+}
 
 export default function ContactPage() {
   return (

@@ -1,8 +1,16 @@
+import type { Metadata } from 'next'
 import History from '@/components/about/History'
 import MissionVision from '@/components/about/MissionVision'
 import CoreValues from '@/components/about/CoreValues'
 import PrincipalsMessage from '@/components/about/PrincipalsMessage'
 import SchoolAnthem from '@/components/about/SchoolAnthem'
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description:
+    'Learn about Mahmud Ahmadiyya College — an Islamic co-educational school (Est. 1994) in Ijede, Ikorodu, Lagos, building leaders through knowledge, faith and character.',
+  alternates: { canonical: '/about' },
+}
 
 export default function AboutPage() {
   return (
