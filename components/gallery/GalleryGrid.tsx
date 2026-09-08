@@ -1,17 +1,16 @@
 'use client'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
-import { useIsMobile } from '@/hooks/useMediaQuery'
 
-interface GalleryImage {
+export interface GalleryImage {
   id: number
   src: string
   category: string
   caption: string
 }
 
-const galleryImages: GalleryImage[] = [
+export const galleryImages: GalleryImage[] = [
   { id: 1, src: '/MACI/Front-View-1.jpg', category: 'Campus', caption: 'School Front View' },
   { id: 2, src: '/MACI/WhatsApp-Image-2021-10-04-at-11.43.38.jpeg', category: 'Events', caption: 'School Event' },
   { id: 3, src: '/MACI/hecons10.jpg', category: 'Academic', caption: 'Students in Class' },
@@ -56,8 +55,26 @@ function Lightbox({ images, currentIndex, onClose, onNavigate }: LightboxProps) 
     onNavigate(currentIndex === images.length - 1 ? 0 : currentIndex + 1)
   }
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose()
+      } else if (e.key === 'ArrowLeft') {
+        handlePrev()
+      } else if (e.key === 'ArrowRight') {
+        handleNext()
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    document.body.style.overflow = 'hidden'
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+      document.body.style.overflow = 'unset'
+    }
+  }, [currentIndex, images.length, onClose, onNavigate])
+
   return (
-    <div className="fixed inset-0 z-50 bg-black/95 flex flex-col">
+    <div className="fixed inset-0 z-50 bg-black/95 flex flex-col" role="dialog" aria-modal="true" aria-label={currentImage.caption}>
       <button
         onClick={onClose}
         className="absolute top-4 right-4 z-50 p-2 text-white hover:text-secondary transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
@@ -70,7 +87,7 @@ function Lightbox({ images, currentIndex, onClose, onNavigate }: LightboxProps) 
         <button
           onClick={handlePrev}
           className="p-2 text-white hover:text-secondary transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
-          aria-label="Previous"
+          aria-label="Previous image"
         >
           <ChevronLeft size={32} />
         </button>
@@ -80,6 +97,7 @@ function Lightbox({ images, currentIndex, onClose, onNavigate }: LightboxProps) 
             src={currentImage.src}
             alt={currentImage.caption}
             fill
+            sizes="(max-width: 768px) 100vw, 896px"
             className="object-contain"
           />
         </div>
@@ -87,7 +105,7 @@ function Lightbox({ images, currentIndex, onClose, onNavigate }: LightboxProps) 
         <button
           onClick={handleNext}
           className="p-2 text-white hover:text-secondary transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
-          aria-label="Next"
+          aria-label="Next image"
         >
           <ChevronRight size={32} />
         </button>
@@ -122,15 +140,18 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {images.map((image, index) => (
-          <div
+          <button
             key={image.id}
+            type="button"
             onClick={() => openLightbox(index)}
-            className="relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer group"
+            className="relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer group block w-full text-left"
+            aria-label={`Open image: ${image.caption}`}
           >
             <Image
               src={image.src}
               alt={image.caption}
               fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -138,7 +159,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
               <p className="text-white font-medium">{image.caption}</p>
               <span className="text-secondary text-sm">{image.category}</span>
             </div>
-          </div>
+          </button>
         ))}
       </div>
 
@@ -153,5 +174,3 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
     </>
   )
 }
-
-export { galleryImages }
