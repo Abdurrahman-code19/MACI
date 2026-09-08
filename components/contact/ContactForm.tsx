@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { Send, Loader2, CheckCircle } from 'lucide-react'
+import { Send, Loader2, CheckCircle, AlertCircle } from 'lucide-react'
 
 interface FormData {
   fullName: string
@@ -14,6 +14,7 @@ interface FormData {
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const {
     register,
@@ -24,12 +25,27 @@ export default function ContactForm() {
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true)
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    console.log('Form submitted:', data)
-    setIsSubmitting(false)
-    setIsSuccess(true)
-    reset()
-    setTimeout(() => setIsSuccess(false), 3000)
+    setError(null)
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+      const result = await response.json()
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Something went wrong. Please try again.')
+      }
+
+      reset()
+      setIsSuccess(true)
+      setTimeout(() => setIsSuccess(false), 4000)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -43,7 +59,14 @@ export default function ContactForm() {
         </div>
       )}
 
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      {error && (
+        <div className="mb-6 p-4 bg-red-100 text-red-700 rounded-lg flex items-center gap-2">
+          <AlertCircle className="w-5 h-5" />
+          <span>{error}</span>
+        </div>
+      )}
+
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" noValidate>
         <div>
           <label htmlFor="fullName" className="block text-sm font-medium text-textDark mb-1">
             Full Name
