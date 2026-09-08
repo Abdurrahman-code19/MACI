@@ -13,9 +13,11 @@ const quickLinks = [
   { href: '/exams', label: 'Results' },
 ]
 
+const WHATSAPP_NUMBER = '2348027490454'
+
 const socialLinks = [
   { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
+  { icon: Twitter, href: '#', label: 'Twitter / X' },
   { icon: Instagram, href: '#', label: 'Instagram' },
   { icon: Linkedin, href: '#', label: 'LinkedIn' },
   { icon: Youtube, href: '#', label: 'YouTube' },
@@ -101,6 +103,7 @@ export default function Footer() {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-200"
                 >
                   <social.icon size={18} />
@@ -108,11 +111,13 @@ export default function Footer() {
               ))}
             </div>
             <a
-              href="#"
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hello%20Mahmud%20Ahmadiyya%20College%20Ijede`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-green-500 transition-colors duration-200"
             >
               <MessageCircle className="w-4 h-4" />
-              WhatsApp Channel
+              Chat on WhatsApp
             </a>
           </div>
         </div>
@@ -120,11 +125,11 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} RIIT Global Tech. All rights reserved.
+              © {new Date().getFullYear()} Mahmud Ahmadiyya College, Ijede. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-secondary transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-secondary transition-colors">Terms of Use</a>
+              <Link href="/contact" className="text-gray-400 hover:text-secondary transition-colors">Privacy Policy</Link>
+              <Link href="/contact" className="text-gray-400 hover:text-secondary transition-colors">Terms of Use</Link>
             </div>
           </div>
         </div>
