@@ -10,7 +10,7 @@ const inter = Inter({
   display: 'swap',
 })
 
-const SITE_URL = 'https://mahmudcollege.edu.ng'
+const SITE_URL = 'https://mahmudahmadiyyacollegeijede.ng'
 
 export const viewport: Viewport = {
   width: 'device-width',

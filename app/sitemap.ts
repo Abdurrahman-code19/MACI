@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-const SITE_URL = 'https://mahmudcollege.edu.ng'
+const SITE_URL = 'https://mahmudahmadiyyacollegeijede.ng'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date()
