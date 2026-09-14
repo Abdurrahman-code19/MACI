@@ -35,7 +35,7 @@ export default function PrincipalsMessage() {
                 It gives me great pleasure to warmly welcome you to the official website of <strong className="text-textDark">Mahmud Ahmadiyya Primary, College and Tahfizul Quran Schools</strong>, Abule-Eko, Ijede, Lagos State and also a new session.
               </p>
               <p>
-                At Mahmud Ahmadiyya Primary, College and Tahfizul Quran Schools, we believe that education is not merely about acquiring certificates or preparing children for successful careers. True education should develop the mind, character, faith and sense of responsibility of every child. Our guiding motto, &ldquo;Seeking Knowledge to Serve Allah,&rdquo; captures this philosophy and remains central to everything we do.
+                At Mahmud Ahmadiyya Primary, College and Tahfizul Quran Schools, we believe that education is not merely about acquiring certificates or preparing children for successful careers. True education should develop the mind, character, faith and sense of responsibility of every child. Our guiding motto, &ldquo;Seeking Knowledge To Serve Allah,&rdquo; captures this philosophy and remains central to everything we do.
               </p>
               <p>
                 Our schools are committed to providing a balanced education that combines quality Western education with sound Islamic upbringing, moral discipline and practical life skills. We strive to create an environment where every learner is encouraged to discover their abilities, develop confidence, think critically, demonstrate good character and become useful to their family, community and society.
@@ -70,7 +70,7 @@ export default function PrincipalsMessage() {
                   <BookOpen className="w-8 h-8 text-secondary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-secondary italic">&ldquo;Seeking Knowledge to Serve Allah.&rdquo;</p>
+                  <p className="font-semibold text-secondary italic">&ldquo;Seeking Knowledge To Serve Allah.&rdquo;</p>
                   <p className="text-white/80 mt-1">Welcome to Mahmud Ahmadiyya Schools.</p>
                 </div>
               </div>
