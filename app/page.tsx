@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Hero from '@/components/home/Hero'
 import WelcomeSection from '@/components/home/WelcomeSection'
+import PrincipalsMessage from '@/components/about/PrincipalsMessage'
 import Features from '@/components/home/Features'
 import AcademicPrograms from '@/components/home/AcademicPrograms'
 import Announcements from '@/components/home/Announcements'
@@ -25,6 +26,7 @@ export default function HomePage() {
     <>
       <Hero />
       <WelcomeSection />
+      <PrincipalsMessage />
       <Features />
       <AcademicPrograms />
       <Announcements />
