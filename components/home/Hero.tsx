@@ -46,7 +46,7 @@ export default function Hero() {
           className="text-lg sm:text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed animate-fade-up"
           style={{ animationDelay: '0.5s' }}
         >
-          Nurturing Tomorrow&apos;s Leaders Through Islamic Values and Modern Education
+          Seeking Knowledge To Serve Allah
         </p>
 
         <div
